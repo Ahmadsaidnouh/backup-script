@@ -83,14 +83,10 @@ __Backing directory to itself__ :
 </br></br>
 __Default directory not empty answer no__ :
 ![validation](imgs/defaultBackup1.png)
-</br></br>
-__Default directory not empty2 answer no__ :
 ![validation](imgs/defaultBackup2.png)
 </br></br>
 __Default directory not empty answer yes__ :
 ![validation](imgs/defaultBackup3.png)
-</br></br>
-__Default directory not empty2 answer yes__ :
 ![validation](imgs/defaultBackup4.png)
 </br></br>
 __User specified destination directory not empty__ :
