@@ -30,7 +30,7 @@ First run ___sudo apt install cron___ command if it's not installed on your mach
 ### Enter inputs
 
 Once you run ___make___ command, the program will ask you to enter the four inputs as shown in the image below. 
-![inputs](imgs-backupd-cron/input.png)
+![inputs](imgs-backup-cron/input.png)
 - First input ___dir___ : it is the directory to be backed up, must be existing directory.
 - Second input ___backupdir___ : it is the backup destination directory. You have two options here, you either specify its name or just leave this option empty and the program will automatically backup to a default directory ___~/cron-backups___.Therefore, there are 6 cases:
   - cases1: default directory ___~/cron-backups___ and it's not exiting ==============> will create it then proceed backing up directly. 
@@ -56,54 +56,54 @@ First, arguments are parsed. Then, the script checks whether changes have occure
 
 ## Sample Runs
 __Backing up to the default directory__ :
-![backup](imgs-backupd-cron/success1.png)
-![backup](imgs-backupd-cron/success2.png)
+![backup](imgs-backup-cron/success1.png)
+![backup](imgs-backup-cron/success2.png)
 </br></br>
 __Backing up to a non-existing user specified directory__ :
-![backup](imgs-backupd-cron/noDef1.png)
-![backup](imgs-backupd-cron/noDef2.png)
+![backup](imgs-backup-cron/noDef1.png)
+![backup](imgs-backup-cron/noDef2.png)
 </br></br>
 __Backing up to an existing but empty user specified directory__ :
-![backup](imgs-backupd-cron/noDefEmpty1.png)
-![backup](imgs-backupd-cron/noDefEmpty2.png)
+![backup](imgs-backup-cron/noDefEmpty1.png)
+![backup](imgs-backup-cron/noDefEmpty2.png)
 
 
 ## Input Validations and Errors Handling
 
 __Empty inputs__ :
-![validation](imgs-backupd-cron/emptyInputsValid.png)-cron
+![validation](imgs-backup-cron/emptyInputsValid.png)-cron
 </br></br>
 __Source directory not existing__ :
-![validation](imgs-backupd-cron/sourceNotExistValid.png)
+![validation](imgs-backup-cron/sourceNotExistValid.png)
 </br></br>
 __Empty interval-sec__ :
-![validation](imgs-backupd-cron/intervalEmptyValid.png)
+![validation](imgs-backup-cron/intervalEmptyValid.png)
 </br></br>
 __Zero interval-sec__ :
-![validation](imgs-backupd-cron/intervalZeroValid.png)
+![validation](imgs-backup-cron/intervalZeroValid.png)
 </br></br>
 __Non integer interval-sec__ :
-![validation](imgs-backupd-cron/intervalNonIntValid.png)
+![validation](imgs-backup-cron/intervalNonIntValid.png)
 </br></br>
 __Empty max-backups__ :
-![validation](imgs-backupd-cron/max-backupsEmptyValid.png)
+![validation](imgs-backup-cron/max-backupsEmptyValid.png)
 </br></br>
 __Zero max-backups__ :
-![validation](imgs-backupd-cron/max-backupsZeroValid.png)
+![validation](imgs-backup-cron/max-backupsZeroValid.png)
 </br></br>
 __Non integer max-backups__ :
-![validation](imgs-backupd-cron/max-backupsNonIntValid.png)
+![validation](imgs-backup-cron/max-backupsNonIntValid.png)
 </br></br>
 __Backing directory to itself__ :
-![validation](imgs-backupd-cron/dirToItself.png)
+![validation](imgs-backup-cron/dirToItself.png)
 </br></br>
 __Default directory not empty answer no__ :
-![validation](imgs-backupd-cron/defaultBackup1.png)
-![validation](imgs-backupd-cron/defaultBackup2.png)
+![validation](imgs-backup-cron/defaultBackup1.png)
+![validation](imgs-backup-cron/defaultBackup2.png)
 </br></br>
 __Default directory not empty answer yes__ :
-![validation](imgs-backupd-cron/defaultBackup3.png)
-![validation](imgs-backupd-cron/defaultBackup4.png)
+![validation](imgs-backup-cron/defaultBackup3.png)
+![validation](imgs-backup-cron/defaultBackup4.png)
 </br></br>
 __User specified destination directory not empty__ :
-![backup](imgs-backupd-cron/noDefNotEmpty.png)
+![backup](imgs-backup-cron/noDefNotEmpty.png)
