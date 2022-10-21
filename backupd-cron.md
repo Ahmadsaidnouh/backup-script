@@ -76,15 +76,6 @@ __Empty inputs__ :
 __Source directory not existing__ :
 ![validation](imgs-backup-cron/sourceNotExistValid.png)
 </br></br>
-__Empty interval-sec__ :
-![validation](imgs-backup-cron/intervalEmptyValid.png)
-</br></br>
-__Zero interval-sec__ :
-![validation](imgs-backup-cron/intervalZeroValid.png)
-</br></br>
-__Non integer interval-sec__ :
-![validation](imgs-backup-cron/intervalNonIntValid.png)
-</br></br>
 __Empty max-backups__ :
 ![validation](imgs-backup-cron/max-backupsEmptyValid.png)
 </br></br>
