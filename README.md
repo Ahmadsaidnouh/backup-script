@@ -60,7 +60,7 @@ __Backing up to the default directory__ :
 ![backup](imgs/success1.png)
 ![backup](imgs/success2.png)
 </br></br>
-__Backing up to an non-existing user specified directory__ :
+__Backing up to a non-existing user specified directory__ :
 ![backup](imgs/noDef1.png)
 ![backup](imgs/noDef2.png)
 </br></br>
