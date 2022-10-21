@@ -17,7 +17,7 @@
   - [Code Overview](#code-overview)
     - [Makefile overview](#makefile-overview)
     - [Backup-cron script overview](#backup-cron-script-overview) 
-  - [Cron expression of 3rd friday of a month](cron-expression-of-3rd-friday-of-a-month)
+  - [Cron expression of 3rd friday of a month](#cron-expression-of-3rd-friday-of-a-month)
   - [Sample Runs](#sample-runs)
   - [Input Validations and Errors Handling](#input-validations-and-errors-handling)
 
