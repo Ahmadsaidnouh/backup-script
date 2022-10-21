@@ -17,6 +17,7 @@
   - [Code Overview](#code-overview)
     - [Makefile overview](#makefile-overview)
     - [Backup-cron script overview](#backup-cron-script-overview) 
+  - [Cron expression of 3rd friday of a month](cron-expression of-3rd-friday-of-a-month)
   - [Sample Runs](#sample-runs)
   - [Input Validations and Errors Handling](#input-validations-and-errors-handling)
 
@@ -52,6 +53,10 @@ First, inputs are taken from the user. Then, inputs are validated and the approp
 
 ### Backup-cron script overview
 First, arguments are parsed. Then, the script checks whether changes have occured and a new backup is needed or not and then takes the appropriate action and then terminates.
+
+
+## Cron expression of 3rd friday of a month
+The cron expression if I need to run this backup every 3rd Friday of the month at 12:31 am is __31 0 15-21 * 5__.
 
 
 ## Sample Runs
