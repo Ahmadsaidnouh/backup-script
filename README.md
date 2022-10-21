@@ -92,6 +92,9 @@ __Empty max-backups__ :
 __Zero max-backups__ :
 ![validation](imgs/max-backupsZeroValid.png)
 </br></br>
+__Non integer max-backups__ :
+![validation](imgs/max-backupsNonIntValid.png)
+</br></br>
 __Backing directory to itself__ :
 ![validation](imgs/dirToItself.png)
 </br></br>
