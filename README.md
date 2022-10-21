@@ -30,7 +30,7 @@ First run ___sudo apt install make___ command if ___make___ command is not insta
 ### Enter inputs
 
 Once you run ___make___ command, the program will ask you to enter the four inputs as shown in the image below. 
-![inputs](imgs/input.png)
+![inputs](imgs-backupd/input.png)
 - First input ___dir___ : it is the directory to be backed up, must be existing directory.
 - Second input ___backupdir___ : it is the backup destination directory. You have two options here, you either specify its name or just leave this option empty and the program will automatically backup to a default directory ___~/backups___.Therefore, there are 6 cases:
   - cases1: default directory ___~/backups___ and it's not exiting ==============> will create it then proceed backing up directly. 
@@ -57,54 +57,54 @@ First, arguments is being parsed. Then, the destination directory will be parsed
 
 ## Sample Runs
 __Backing up to the default directory__ :
-![backup](imgs/success1.png)
-![backup](imgs/success2.png)
+![backup](imgs-backupd/success1.png)
+![backup](imgs-backupd/success2.png)
 </br></br>
 __Backing up to a non-existing user specified directory__ :
-![backup](imgs/noDef1.png)
-![backup](imgs/noDef2.png)
+![backup](imgs-backupd/noDef1.png)
+![backup](imgs-backupd/noDef2.png)
 </br></br>
 __Backing up to an existing but empty user specified directory__ :
-![backup](imgs/noDefEmpty1.png)
-![backup](imgs/noDefEmpty2.png)
+![backup](imgs-backupd/noDefEmpty1.png)
+![backup](imgs-backupd/noDefEmpty2.png)
 
 
 ## Input Validations and Errors Handling
 
 __Empty inputs__ :
-![validation](imgs/emptyInputsValid.png)
+![validation](imgs-backupd/emptyInputsValid.png)
 </br></br>
 __Source directory not existing__ :
-![validation](imgs/sourceNotExistValid.png)
+![validation](imgs-backupd/sourceNotExistValid.png)
 </br></br>
 __Empty interval-sec__ :
-![validation](imgs/intervalEmptyValid.png)
+![validation](imgs-backupd/intervalEmptyValid.png)
 </br></br>
 __Zero interval-sec__ :
-![validation](imgs/intervalZeroValid.png)
+![validation](imgs-backupd/intervalZeroValid.png)
 </br></br>
 __Non integer interval-sec__ :
-![validation](imgs/intervalNonIntValid.png)
+![validation](imgs-backupd/intervalNonIntValid.png)
 </br></br>
 __Empty max-backups__ :
-![validation](imgs/max-backupsEmptyValid.png)
+![validation](imgs-backupd/max-backupsEmptyValid.png)
 </br></br>
 __Zero max-backups__ :
-![validation](imgs/max-backupsZeroValid.png)
+![validation](imgs-backupd/max-backupsZeroValid.png)
 </br></br>
 __Non integer max-backups__ :
-![validation](imgs/max-backupsNonIntValid.png)
+![validation](imgs-backupd/max-backupsNonIntValid.png)
 </br></br>
 __Backing directory to itself__ :
-![validation](imgs/dirToItself.png)
+![validation](imgs-backupd/dirToItself.png)
 </br></br>
 __Default directory not empty answer no__ :
-![validation](imgs/defaultBackup1.png)
-![validation](imgs/defaultBackup2.png)
+![validation](imgs-backupd/defaultBackup1.png)
+![validation](imgs-backupd/defaultBackup2.png)
 </br></br>
 __Default directory not empty answer yes__ :
-![validation](imgs/defaultBackup3.png)
-![validation](imgs/defaultBackup4.png)
+![validation](imgs-backupd/defaultBackup3.png)
+![validation](imgs-backupd/defaultBackup4.png)
 </br></br>
 __User specified destination directory not empty__ :
-![backup](imgs/noDefNotEmpty.png)
+![backup](imgs-backupd/noDefNotEmpty.png)
