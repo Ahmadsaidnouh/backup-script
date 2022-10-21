@@ -52,7 +52,7 @@ All directories that will be dealt with must be below your home directory. There
 First, inputs are taken from the user. Then, inputs are validated and the appropriate message is shown if an error occurs. If no errors, inputs will be analysed to know whether destination directory will be the default directory or will be a user specified directory. Also, at this step, the file checks if the destination directory is not existing, the file will create it. Then, the ___./backupd___ script is run with the appropriate arguments.
 
 ### Backupd script overview
-First, arguments is being parsed. Then, the destination directory will be parsed to determined which of the six cases described previously will be executed. Then, the first backup is created and the script enters an infinite loop that checks every interval whether changes have occured and a new backup is needed or not. 
+First, arguments are parsed. Then, the destination directory will be parsed to determined which of the six cases described previously will be executed. Then, the first backup is created and the script enters an infinite loop that checks every interval whether changes have occured and a new backup is needed or not. 
 
 
 ## Sample Runs
