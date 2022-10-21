@@ -14,7 +14,8 @@
     - [Starting the program](#starting-the-program)
     - [Enter inputs](#enter-inputs)
     - [How to enter directory names](#how-to-enter-directory-names)
-  - [Input Validations](#input-validation)
+  - [Sample Runs](#sample-runs)
+  - [Input Validations and Error Handling](#input-validation-and-error-handling)
 
 ## User Manual
 
@@ -42,5 +43,55 @@ Once you run ___make___ command, the program will ask you to enter the four inpu
 ### How to enter directory names
 All directories that will be dealed with must be below your home directory. Therefore, any directory name you will enter to the program must be relative to the (\~/). The tilde (\~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (\~/) is the beginning of a path to a file or directory below the your home directory. For example, if you have a directory named ___abc___ below your home directory then its path is ___~/abc___. So if you want to back it up then just enter to the program ___abc___ , not ___~/abc___. Also, if you have a directory named ___xyz___ below that ___abc___ directory then its path is ___~/abc/xyz___. So, if you want to back it up then just enter to the program ___abc/xyz___ , not ___~/abc/xyz___. 
 
-##Input Validations
 
+## Sample Runs
+__Backing up to the default directory__ :
+![backup](imgs/success1.png)
+![backup](imgs/success2.png)
+</br></br>
+__Backing up to an non-existing user specified directory__ :
+![backup](imgs/noDef1.png)
+![backup](imgs/noDef2.png)
+</br></br>
+__Backing up to an existing but empty user specified directory__ :
+![backup](imgs/noDefEmpty1.png)
+![backup](imgs/noDefEmpty2.png)
+
+
+## Input Validations and Error Handling
+
+__Empty inputs__ :
+![validation](imgs/emptyInputsValid.png)
+</br></br>
+__Source directory not existing__ :
+![validation](imgs/sourceNotExistValid.png)
+</br></br>
+__Empty interval-sec__ :
+![validation](imgs/intervalEmptyValid.png)
+</br></br>
+__Zero interval-sec__ :
+![validation](imgs/intervalZeroValid.png)
+</br></br>
+__Empty max-backups__ :
+![validation](imgs/max-backupsEmptyValid.png)
+</br></br>
+__Zero max-backups__ :
+![validation](imgs/max-backupsZeroValid.png)
+</br></br>
+__Backing directory to itself__ :
+![validation](imgs/dirToItself.png)
+</br></br>
+__Default directory not empty answer no__ :
+![validation](imgs/defaultBackup1.png)
+</br></br>
+__Default directory not empty2 answer no__ :
+![validation](imgs/defaultBackup2.png)
+</br></br>
+__Default directory not empty answer yes__ :
+![validation](imgs/defaultBackup3.png)
+</br></br>
+__Default directory not empty2 answer yes__ :
+![validation](imgs/defaultBackup4.png)
+</br></br>
+__User specified destination directory not empty__ :
+![backup](imgs/noDefNotEmpty.png)
