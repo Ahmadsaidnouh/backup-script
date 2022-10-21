@@ -10,12 +10,21 @@
 - [Backup Script](#backup-script)
   - [Made by:](#made-by)
   - [Contents:](#contents)
+  - [Code Overview](#code-overview)
+    - [Makefile overview](#makfile-overview)
+    - [backupd overview](#backupd-overview) 
   - [User Manual](#user-manual)
     - [Starting the program](#starting-the-program)
     - [Enter inputs](#enter-inputs)
     - [How to enter directory names](#how-to-enter-directory-names)
   - [Sample Runs](#sample-runs)
   - [Input Validations and Error Handling](#input-validation-and-error-handling)
+
+
+## Code Overview
+
+### Makefile overview
+First, inputs are taken from the user. Then,
 
 ## User Manual
 
@@ -71,6 +80,9 @@ __Empty interval-sec__ :
 </br></br>
 __Zero interval-sec__ :
 ![validation](imgs/intervalZeroValid.png)
+</br></br>
+__Non integer interval-sec__ :
+![validation](imgs/intervalNonIntValid.png)
 </br></br>
 __Empty max-backups__ :
 ![validation](imgs/max-backupsEmptyValid.png)
