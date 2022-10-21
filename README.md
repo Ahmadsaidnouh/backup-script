@@ -10,21 +10,16 @@
 - [Backup Script](#backup-script)
   - [Made by:](#made-by)
   - [Contents:](#contents)
-  - [Code Overview](#code-overview)
-    - [Makefile overview](#makfile-overview)
-    - [backupd overview](#backupd-overview) 
   - [User Manual](#user-manual)
     - [Starting the program](#starting-the-program)
     - [Enter inputs](#enter-inputs)
-    - [How to enter directory names](#how-to-enter-directory-names)
+    - [How to enter directory path](#how-to-enter-directory-path)
+  - [Code Overview](#code-overview)
+    - [Makefile overview](#makefile-overview)
+    - [Backupd script overview](#backupd-script-overview) 
   - [Sample Runs](#sample-runs)
-  - [Input Validations and Error Handling](#input-validation-and-error-handling)
+  - [Input Validations and Errors Handling](#input-validations-and-errors-handling)
 
-
-## Code Overview
-
-### Makefile overview
-First, inputs are taken from the user. Then,
 
 ## User Manual
 
@@ -46,11 +41,18 @@ Once you run ___make___ command, the program will ask you to enter the four inpu
   - cases6: user specified directory and it's existing but not empty ============> will display error message and then terminate execution without any deletion. 
 - Third input ___interval-sec___ : it is how many seconds the program should wait before checking for a new backup.
 - Fourth input ___max-backups___ : it is the maximum number of backups to be stored in the ___backupdir___. If maximum backups is reached and a new backup needs to be added, the program will delete the oldest backup and then add the new one.
-
   
+### How to enter directory path
+All directories that will be dealt with must be below your home directory. Therefore, any directory path you will enter to the program must be relative to the (\~/). The tilde (\~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (\~/) is the beginning of a path to a file or directory below the your home directory. For example, if you have a directory named ___abc___ below your home directory then its path is ___~/abc___. So if you want to back it up then just enter to the program ___abc___ , not ___~/abc___. Also, if you have a directory named ___xyz___ below that ___abc___ directory then its path is ___~/abc/xyz___. So, if you want to back it up then just enter to the program ___abc/xyz___ , not ___~/abc/xyz___. 
 
-### How to enter directory names
-All directories that will be dealed with must be below your home directory. Therefore, any directory name you will enter to the program must be relative to the (\~/). The tilde (\~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (\~/) is the beginning of a path to a file or directory below the your home directory. For example, if you have a directory named ___abc___ below your home directory then its path is ___~/abc___. So if you want to back it up then just enter to the program ___abc___ , not ___~/abc___. Also, if you have a directory named ___xyz___ below that ___abc___ directory then its path is ___~/abc/xyz___. So, if you want to back it up then just enter to the program ___abc/xyz___ , not ___~/abc/xyz___. 
+
+## Code Overview
+
+### Makefile overview
+First, inputs are taken from the user. Then, inputs are validated and the appropriate message is shown if an error occurs. If no errors, inputs will be analysed to know whether destination directory will be the default directory or will be a user specified directory. Also, at this step, the file checks if the destination directory is not existing, the file will create it. Then, the ___./backupd___ script is run with the appropriate arguments.
+
+### Backupd script overview
+First, arguments is being parsed. Then, the destination directory will be parsed to determined which of the six cases described previously will be executed. Then, the first backup is created and the script enters an infinite loop that checks every interval whether changes have occured and a new backup is needed or not. 
 
 
 ## Sample Runs
@@ -67,7 +69,7 @@ __Backing up to an existing but empty user specified directory__ :
 ![backup](imgs/noDefEmpty2.png)
 
 
-## Input Validations and Error Handling
+## Input Validations and Errors Handling
 
 __Empty inputs__ :
 ![validation](imgs/emptyInputsValid.png)
