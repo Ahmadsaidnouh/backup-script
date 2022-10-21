@@ -25,7 +25,7 @@ First run {sudo apt install make} command if make is not installed on your machi
 ### Enter inputs
 
 Once you run {make} command, the program will ask you to enter the four inputs as shown in the below image.
-__Important note:__ all directories that will be dealed with must be below your home directory. Therefore, any directory name you will enter to the program must be relative to the (\~/). The tilde (\~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (~/) is the beginning of a path to a file or directory below the user's home directory. For example, if you have a directory named __abc__ below your home directory then its path is __~/abc__. So if you want to back it up then just enter to the program __abc__, not __~/abc__.
+__Important note:__ all directories that will be dealed with must be below your home directory. Therefore, any directory name you will enter to the program must be relative to the (\~/). The tilde (\~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (\~/) is the beginning of a path to a file or directory below the user's home directory. For example, if you have a directory named __abc__ below your home directory then its path is __~/abc__. So if you want to back it up then just enter to the program __abc__, not __~/abc__.
 ![inputs](imgs/input.png)
 - First input {dir}: it is the directory to be backed up, must be existing directory
 - Second input {backupdir}: it is the backup destination directory, and has 6 cases:
