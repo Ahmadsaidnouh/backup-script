@@ -76,7 +76,7 @@ __Backing up to an existing but empty user specified directory__ :
 ## Input Validations and Errors Handling
 
 __Empty inputs__ :
-![validation](imgs-backup-cron/emptyInputsValid.png)-cron
+![validation](imgs-backup-cron/emptyInputsValid.png)
 </br></br>
 __Source directory not existing__ :
 ![validation](imgs-backup-cron/sourceNotExistValid.png)
